@@ -28,11 +28,22 @@ public abstract class WebDriverTestsBase
     {
         String browser = System.getenv("TEST_BROWSER");
         browser = browser == null ? Browser.CHROME_BROWSER : browser.toUpperCase();
-
+        
         switch (browser)
         {
             case Browser.EDGE_BROWSER:
-                WebDriverManager.edgedriver().setup();
+                String pipelineEdgeDriverPath = System.getenv("EDGEWEBDRIVER");
+                if (pipelineEdgeDriverPath == null)
+                {
+                    WebDriverManager.edgedriver().setup();
+                }
+                else
+                {
+                    System.setProperty(
+                        "webdriver.edge.driver", 
+                        String.format("%s\\msedgedriver.exe", pipelineEdgeDriverPath));
+                }
+
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.setPageLoadStrategy("normal");
                 this.driver = new EdgeDriver(edgeOptions);
