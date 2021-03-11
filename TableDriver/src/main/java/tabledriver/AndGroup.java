@@ -1,11 +1,11 @@
-package tabledriver.rowquery;
+package tabledriver;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class AndGroup
+class AndGroup
 {
     private final List<FieldCondition> conditions;
     public List<FieldCondition> getConditions()
@@ -23,7 +23,7 @@ public class AndGroup
         String[] conditionStrings = ParseHelper.splitByToken(andGroupString, '&');
 
         List<FieldCondition> conditions = Stream.of(conditionStrings)
-            .map(cs -> FieldCondition.parse(cs))
+            .map(FieldCondition::parse)
             .collect(Collectors.toList());
 
         return new AndGroup(conditions);

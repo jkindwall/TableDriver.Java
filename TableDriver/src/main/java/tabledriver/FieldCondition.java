@@ -1,10 +1,10 @@
-package tabledriver.rowquery;
+package tabledriver;
 
 import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FieldCondition
+class FieldCondition
 {
     private String field;
     public String getField() 

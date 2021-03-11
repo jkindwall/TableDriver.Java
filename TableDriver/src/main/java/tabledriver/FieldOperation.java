@@ -1,6 +1,6 @@
-package tabledriver.rowquery;
+package tabledriver;
 
-public class FieldOperation
+class FieldOperation
 {
     private static final String[] allOperations = new String[]
     {

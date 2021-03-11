@@ -1,4 +1,4 @@
-package tabledriver.rowquery;
+package tabledriver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class ParseHelper
+class ParseHelper
 {
     private static final class TokenInfo
     {

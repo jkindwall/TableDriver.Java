@@ -1,11 +1,11 @@
-package tabledriver.rowquery;
+package tabledriver;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class OrGroup
+class OrGroup
 {
     private final List<AndGroup> andGroups;
     public List<AndGroup> getAndGroups() 
@@ -23,7 +23,7 @@ public class OrGroup
         String[] andGroupStrings = ParseHelper.splitByToken(orGroupString, '|');
 
         List<AndGroup> groups = Stream.of(andGroupStrings)
-            .map(ags -> AndGroup.parse(ags))
+            .map(AndGroup::parse)
             .collect(Collectors.toList());
 
         return new OrGroup(groups);
