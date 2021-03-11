@@ -2,8 +2,6 @@ package tabledriver;
 
 import java.util.concurrent.TimeUnit;
 
-import javax.lang.model.util.ElementScanner6;
-
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.PageLoadStrategy;
