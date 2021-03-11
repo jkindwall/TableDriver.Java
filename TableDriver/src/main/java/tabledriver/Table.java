@@ -416,7 +416,7 @@ public class Table
         {
             throw new IllegalArgumentException(String.format(
                 "Argument: fieldCondition.  The table does not contain a column with the header caption of '%s'.", 
-                fieldCondition));
+                fieldCondition.getField()));
         }
 
         if (fieldCondition.getOperation().equals(FieldOperation.STARTS_WITH))
