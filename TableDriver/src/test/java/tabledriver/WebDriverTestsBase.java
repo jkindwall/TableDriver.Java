@@ -48,7 +48,7 @@ public abstract class WebDriverTestsBase
                 {
                     System.setProperty(
                         "webdriver.chrome.driver", 
-                        String.format("%s/chromedriver", pipelineChromeDriverPath));
+                        String.format("%s\\chromedriver.exe", pipelineChromeDriverPath));
                 }
 
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -66,7 +66,7 @@ public abstract class WebDriverTestsBase
                 {
                     System.setProperty(
                         "webdriver.gecko.driver",
-                        String.format("%s/geckodriver", pipelineFirefoxDriverPath));
+                        String.format("%s\\geckodriver.exe", pipelineFirefoxDriverPath));
                 }
 
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
