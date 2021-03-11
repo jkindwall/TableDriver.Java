@@ -2,6 +2,8 @@ package tabledriver;
 
 import java.util.concurrent.TimeUnit;
 
+import javax.lang.model.util.ElementScanner6;
+
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.PageLoadStrategy;
@@ -39,14 +41,32 @@ public abstract class WebDriverTestsBase
                 break;
 
             case Browser.CHROME_BROWSER:
-                WebDriverManager.chromedriver().setup();
+                String pipelineChromeDriverPath = System.getenv("CHROMEWEBDRIVER");
+                if (pipelineChromeDriverPath == null)
+                {
+                    WebDriverManager.chromedriver().setup();
+                }
+                else
+                {
+                    System.setProperty("webdriver.chrome.driver", pipelineChromeDriverPath);
+                }
+
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 this.driver = new ChromeDriver(chromeOptions);
                 break;
 
             case Browser.FIREFOX_BROWSER:
-                WebDriverManager.firefoxdriver().setup();
+                String pipelineFirefoxDriverPath = System.getenv("GECKOWEBDRIVER");
+                if (pipelineFirefoxDriverPath == null)
+                {
+                    WebDriverManager.firefoxdriver().setup();
+                }
+                else
+                {
+                    System.setProperty("webdriver.gecko.driver", pipelineFirefoxDriverPath);
+                }
+
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 this.driver = new FirefoxDriver(firefoxOptions);
