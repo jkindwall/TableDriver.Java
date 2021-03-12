@@ -16,85 +16,85 @@ public class FirstRowHeaderTableTests extends TableTestsBase
     }
 
     @Test
-    public void FirstRowHeaderTablePropertiesTest()
+    public void firstRowHeaderTablePropertiesTest()
     {
         this.testTableProperties(FirstRowHeaderTableTests.TABLE_ID);
     }
 
     @Test
-    public void FirstRowHeaderTableGetRowsTest()
+    public void firstRowHeaderTableGetRowsTest()
     {
         this.testGetRows();
     }
 
     @Test
-    public void FirstRowHeaderTableFindRowTest()
+    public void firstRowHeaderTableFindRowTest()
     {
         this.testFindRow();
     }
 
     @Test
-    public void FirstRowHeaderTableFindRowsTest()
+    public void firstRowHeaderTableFindRowsTest()
     {
         this.testFindRows();
     }
 
     @Test
-    public void FirstRowHeaderTableFindCellTest()
+    public void firstRowHeaderTableFindCellTest()
     {
         this.testFindCell();
     }
 
     @Test
-    public void FirstRowHeaderTableFindCellsTest()
+    public void firstRowHeaderTableFindCellsTest()
     {
         this.testFindCells();
     }
 
     @Test
-    public void FirstRowHeaderTableGetHeaderTest()
+    public void firstRowHeaderTableGetHeaderTest()
     {
         this.testGetHeader();
     }
 
     @Test
-    public void FirstRowHeaderTableNotEqualInRowQueryTest()
+    public void firstRowHeaderTableNotEqualInRowQueryTest()
     {
         this.testNotEqualInRowQuery();
     }
 
     @Test
-    public void FirstRowHeaderTableLessThanInRowQueryTest()
+    public void firstRowHeaderTableLessThanInRowQueryTest()
     {
         this.testLessThanInRowQuery();
     }
 
     @Test
-    public void FirstRowHeaderTableLessThanOrEqualInRowQueryTest()
+    public void firstRowHeaderTableLessThanOrEqualInRowQueryTest()
     {
         this.testLessThanOrEqualInRowQuery();
     }
 
     @Test
-    public void FirstRowHeaderTableGreaterThanInRowQueryTest()
+    public void firstRowHeaderTableGreaterThanInRowQueryTest()
     {
         this.testGreaterThanInRowQuery();
     }
 
     @Test
-    public void FirstRowHeaderTableGreaterThanOrEqualInRowQueryTest()
+    public void firstRowHeaderTableGreaterThanOrEqualInRowQueryTest()
     {
         this.testGreaterThanOrEqualInRowQuery();
     }
 
     @Test
-    public void FirstRowHeaderTableStartsWithInRowQueryTest()
+    public void firstRowHeaderTableStartsWithInRowQueryTest()
     {
         this.testStartsWithInRowQuery();
     }
 
     @Test
-    public void FirstRowHeaderTableContainsInRowQueryTest()
+    public void firstRowHeaderTableContainsInRowQueryTest()
     {
         this.testContainsInRowQuery();
     }

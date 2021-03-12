@@ -20,85 +20,85 @@ public class ExternalHeadersTableTests extends ExternalHeadersTableTestsBase
     }
 
     @Test
-    public void ExternalHeadersTablePropertiesTest()
+    public void externalHeadersTablePropertiesTest()
     {
         this.testTableProperties(ExternalHeadersTableTests.TABLE_ID);
     }
 
     @Test
-    public void ExternalHeadersTableGetRowsTest()
+    public void externalHeadersTableGetRowsTest()
     {
         this.testGetRows();
     }
 
     @Test
-    public void ExternalHeadersTableFindRowTest()
+    public void externalHeadersTableFindRowTest()
     {
         this.testFindRow();
     }
 
     @Test
-    public void ExternalHeadersTableFindRowsTest()
+    public void externalHeadersTableFindRowsTest()
     {
         this.testFindRows();
     }
 
     @Test
-    public void ExternalHeadersTableFindCellTest()
+    public void externalHeadersTableFindCellTest()
     {
         this.testFindCell();
     }
 
     @Test
-    public void ExternalHeaderstheadTableFindCellsTest()
+    public void externalHeaderstheadTableFindCellsTest()
     {
         this.testFindCells();
     }
 
     @Test
-    public void ExternalHeadersTableGetHeaderTest()
+    public void externalHeadersTableGetHeaderTest()
     {
         this.testGetHeader();
     }
 
     @Test
-    public void ExternalHeadersTableNotEqualInRowQueryTest()
+    public void externalHeadersTableNotEqualInRowQueryTest()
     {
         this.testNotEqualInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersTableLessThanInRowQueryTest()
+    public void externalHeadersTableLessThanInRowQueryTest()
     {
         this.testLessThanInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersTableLessThanOrEqualInRowQueryTest()
+    public void externalHeadersTableLessThanOrEqualInRowQueryTest()
     {
         this.testLessThanOrEqualInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersTableGreaterThanInRowQueryTest()
+    public void externalHeadersTableGreaterThanInRowQueryTest()
     {
         this.testGreaterThanInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersTableGreaterThanOrEqualInRowQueryTest()
+    public void externalHeadersTableGreaterThanOrEqualInRowQueryTest()
     {
         this.testGreaterThanOrEqualInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersTableStartsWithInRowQueryTest()
+    public void externalHeadersTableStartsWithInRowQueryTest()
     {
         this.testStartsWithInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersTableContainsInRowQueryTest()
+    public void externalHeadersTableContainsInRowQueryTest()
     {
         this.testContainsInRowQuery();
     }

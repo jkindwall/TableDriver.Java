@@ -16,85 +16,85 @@ public class THTagsInTBODYTableTests extends TableTestsBase
     }
 
     @Test
-    public void THTagsInTBODYTablePropertiesTest()
+    public void thTagsInTBODYTablePropertiesTest()
     {
         this.testTableProperties(THTagsInTBODYTableTests.TABLE_ID);
     }
 
     @Test
-    public void THTagsInTBODYTableGetRowsTest()
+    public void thTagsInTBODYTableGetRowsTest()
     {
         this.testGetRows();
     }
 
     @Test
-    public void THTagsInTBODYTableFindRowTest()
+    public void thTagsInTBODYTableFindRowTest()
     {
         this.testFindRow();
     }
 
     @Test
-    public void THTagsInTBODYTableFindRowsTest()
+    public void thTagsInTBODYTableFindRowsTest()
     {
         this.testFindRows();
     }
 
     @Test
-    public void THTagsInTBODYTableFindCellTest()
+    public void thTagsInTBODYTableFindCellTest()
     {
         this.testFindCell();
     }
 
     @Test
-    public void THTagsInTBODYTableFindCellsTest()
+    public void thTagsInTBODYTableFindCellsTest()
     {
         this.testFindCells();
     }
 
     @Test
-    public void THTagsInTBODYTableGetHeaderTest()
+    public void thTagsInTBODYTableGetHeaderTest()
     {
         this.testGetHeader();
     }
 
     @Test
-    public void THTagsInTBODYTableNotEqualInRowQueryTest()
+    public void thTagsInTBODYTableNotEqualInRowQueryTest()
     {
         this.testNotEqualInRowQuery();
     }
 
     @Test
-    public void THTagsInTBODYTableLessThanInRowQueryTest()
+    public void thTagsInTBODYTableLessThanInRowQueryTest()
     {
         this.testLessThanInRowQuery();
     }
 
     @Test
-    public void THTagsInTBODYTableLessThanOrEqualInRowQueryTest()
+    public void thTagsInTBODYTableLessThanOrEqualInRowQueryTest()
     {
         this.testLessThanOrEqualInRowQuery();
     }
 
     @Test
-    public void THTagsInTBODYTableGreaterThanInRowQueryTest()
+    public void thTagsInTBODYTableGreaterThanInRowQueryTest()
     {
         this.testGreaterThanInRowQuery();
     }
 
     @Test
-    public void THTagsInTBODYTableGreaterThanOrEqualInRowQueryTest()
+    public void thTagsInTBODYTableGreaterThanOrEqualInRowQueryTest()
     {
         this.testGreaterThanOrEqualInRowQuery();
     }
 
     @Test
-    public void THTagsInTBODYTableStartsWithInRowQueryTest()
+    public void thTagsInTBODYTableStartsWithInRowQueryTest()
     {
         this.testStartsWithInRowQuery();
     }
 
     @Test
-    public void THTagsInTBODYTableContainsInRowQueryTest()
+    public void thTagsInTBODYTableContainsInRowQueryTest()
     {
         this.testContainsInRowQuery();
     }

@@ -20,85 +20,85 @@ public class ExternalHeadersInTBODYTableTests extends ExternalHeadersTableTestsB
     }
 
     @Test
-    public void ExternalHeadersInTBODYTablePropertiesTest()
+    public void externalHeadersInTBODYTablePropertiesTest()
     {
         this.testTableProperties(ExternalHeadersInTBODYTableTests.TABLE_ID);
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableGetRowsTest()
+    public void externalHeadersInTBODYTableGetRowsTest()
     {
         this.testGetRows();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableFindRowTest()
+    public void externalHeadersInTBODYTableFindRowTest()
     {
         this.testFindRow();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableFindRowsTest()
+    public void externalHeadersInTBODYTableFindRowsTest()
     {
         this.testFindRows();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableFindCellTest()
+    public void externalHeadersInTBODYTableFindCellTest()
     {
         this.testFindCell();
     }
 
     @Test
-    public void ExternalHeadersInTBODYtheadTableFindCellsTest()
+    public void externalHeadersInTBODYtheadTableFindCellsTest()
     {
         this.testFindCells();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableGetHeaderTest()
+    public void externalHeadersInTBODYTableGetHeaderTest()
     {
         this.testGetHeader();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableNotEqualInRowQueryTest()
+    public void externalHeadersInTBODYTableNotEqualInRowQueryTest()
     {
         this.testNotEqualInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableLessThanInRowQueryTest()
+    public void externalHeadersInTBODYTableLessThanInRowQueryTest()
     {
         this.testLessThanInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableLessThanOrEqualInRowQueryTest()
+    public void externalHeadersInTBODYTableLessThanOrEqualInRowQueryTest()
     {
         this.testLessThanOrEqualInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableGreaterThanInRowQueryTest()
+    public void externalHeadersInTBODYTableGreaterThanInRowQueryTest()
     {
         this.testGreaterThanInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableGreaterThanOrEqualInRowQueryTest()
+    public void externalHeadersInTBODYTableGreaterThanOrEqualInRowQueryTest()
     {
         this.testGreaterThanOrEqualInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableStartsWithInRowQueryTest()
+    public void externalHeadersInTBODYTableStartsWithInRowQueryTest()
     {
         this.testStartsWithInRowQuery();
     }
 
     @Test
-    public void ExternalHeadersInTBODYTableContainsInRowQueryTest()
+    public void externalHeadersInTBODYTableContainsInRowQueryTest()
     {
         this.testContainsInRowQuery();
     }

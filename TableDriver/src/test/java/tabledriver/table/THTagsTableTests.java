@@ -16,85 +16,85 @@ public class THTagsTableTests extends TableTestsBase
     }
 
     @Test
-    public void THTagsTablePropertiesTest()
+    public void thTagsTablePropertiesTest()
     {
         this.testTableProperties(THTagsTableTests.TABLE_ID);
     }
 
     @Test
-    public void THTagsTableGetRowsTest()
+    public void thTagsTableGetRowsTest()
     {
         this.testGetRows();
     }
 
     @Test
-    public void THTagsTableFindRowTest()
+    public void thTagsTableFindRowTest()
     {
         this.testFindRow();
     }
 
     @Test
-    public void THTagsTableFindRowsTest()
+    public void thTagsTableFindRowsTest()
     {
         this.testFindRows();
     }
 
     @Test
-    public void THTagsTableFindCellTest()
+    public void thTagsTableFindCellTest()
     {
         this.testFindCell();
     }
 
     @Test
-    public void THTagsTableFindCellsTest()
+    public void thTagsTableFindCellsTest()
     {
         this.testFindCells();
     }
 
     @Test
-    public void THTagsTableGetHeaderTest()
+    public void thTagsTableGetHeaderTest()
     {
         this.testGetHeader();
     }
 
     @Test
-    public void THTagsTableNotEqualInRowQueryTest()
+    public void thTagsTableNotEqualInRowQueryTest()
     {
         this.testNotEqualInRowQuery();
     }
 
     @Test
-    public void THTagsTableLessThanInRowQueryTest()
+    public void thTagsTableLessThanInRowQueryTest()
     {
         this.testLessThanInRowQuery();
     }
 
     @Test
-    public void THTagsTableLessThanOrEqualInRowQueryTest()
+    public void thTagsTableLessThanOrEqualInRowQueryTest()
     {
         this.testLessThanOrEqualInRowQuery();
     }
 
     @Test
-    public void THTagsTableGreaterThanInRowQueryTest()
+    public void thTagsTableGreaterThanInRowQueryTest()
     {
         this.testGreaterThanInRowQuery();
     }
 
     @Test
-    public void THTagsTableGreaterThanOrEqualInRowQueryTest()
+    public void thTagsTableGreaterThanOrEqualInRowQueryTest()
     {
         this.testGreaterThanOrEqualInRowQuery();
     }
 
     @Test
-    public void THTagsTableStartsWithInRowQueryTest()
+    public void thTagsTableStartsWithInRowQueryTest()
     {
         this.testStartsWithInRowQuery();
     }
 
     @Test
-    public void THTagsTableContainsInRowQueryTest()
+    public void thTagsTableContainsInRowQueryTest()
     {
         this.testContainsInRowQuery();
     }

@@ -16,85 +16,85 @@ public class NoHeaderTableTests extends NoHeaderTableTestsBase
     }
 
     @Test
-    public void NoHeaderTablePropertiesTest()
+    public void noHeaderTablePropertiesTest()
     {
         this.testTableProperties(NoHeaderTableTests.TABLE_ID);
     }
 
     @Test
-    public void NoHeaderTableGetRowsTest()
+    public void noHeaderTableGetRowsTest()
     {
         this.testGetRows();
     }
 
     @Test
-    public void NoHeaderTableFindRowTest()
+    public void noHeaderTableFindRowTest()
     {
         this.testFindRow();
     }
 
     @Test
-    public void NoHeaderTableFindRowsTest()
+    public void noHeaderTableFindRowsTest()
     {
         this.testFindRows();
     }
 
     @Test
-    public void NoHeaderTableFindCellTest()
+    public void noHeaderTableFindCellTest()
     {
         this.testFindCell();
     }
 
     @Test
-    public void NoHeaderTableFindCellsTest()
+    public void noHeaderTableFindCellsTest()
     {
         this.testFindCells();
     }
 
     @Test
-    public void NoHeaderTableGetHeaderTest()
+    public void noHeaderTableGetHeaderTest()
     {
         this.testGetHeader();
     }
 
     @Test
-    public void NoHeaderTableNotEqualInRowQueryTest()
+    public void noHeaderTableNotEqualInRowQueryTest()
     {
         this.testNotEqualInRowQuery();
     }
 
     @Test
-    public void NoHeaderTableLessThanInRowQueryTest()
+    public void noHeaderTableLessThanInRowQueryTest()
     {
         this.testLessThanInRowQuery();
     }
 
     @Test
-    public void NoHeaderTableLessThanOrEqualInRowQueryTest()
+    public void noHeaderTableLessThanOrEqualInRowQueryTest()
     {
         this.testLessThanOrEqualInRowQuery();
     }
 
     @Test
-    public void NoHeaderTableGreaterThanInRowQueryTest()
+    public void noHeaderTableGreaterThanInRowQueryTest()
     {
         this.testGreaterThanInRowQuery();
     }
 
     @Test
-    public void NoHeaderTableGreaterThanOrEqualInRowQueryTest()
+    public void noHeaderTableGreaterThanOrEqualInRowQueryTest()
     {
         this.testGreaterThanOrEqualInRowQuery();
     }
 
     @Test
-    public void NoHeaderTableStartsWithInRowQueryTest()
+    public void noHeaderTableStartsWithInRowQueryTest()
     {
         this.testStartsWithInRowQuery();
     }
 
     @Test
-    public void NoHeaderTableContainsInRowQueryTest()
+    public void noHeaderTableContainsInRowQueryTest()
     {
         this.testContainsInRowQuery();
     }
