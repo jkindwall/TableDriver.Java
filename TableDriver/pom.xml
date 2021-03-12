@@ -60,7 +60,7 @@
           <version>2.22.1</version>
           <configuration>
             <parallel>all</parallel>
-            <useUnlimitedThreads>true</useUnlimitedThreads>
+            <threadCount>4</threadCount>
           </configuration>
         </plugin>
         <plugin>
