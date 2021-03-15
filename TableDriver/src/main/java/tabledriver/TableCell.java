@@ -3,24 +3,28 @@ package tabledriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-/// <summary>
-/// Class rerpresenting a table cell html element
-/// </summary>
+/**
+ * Class rerpresenting a table cell html element
+ */
 public class TableCell
 {
     private final int columnIndex; 
-    /// <summary>
-    /// Gets the index of the column under which this cell is found
-    /// </summary>
+    /**
+     * Gets the index of the column under which this cell is found
+     * 
+     * @return  Column index of this cell
+     */
     public int getColumnIndex() 
     { 
         return this.columnIndex; 
     }
 
     private final WebElement element;
-    /// <summary>
-    /// IWebElement representing the "td" element
-    /// </summary>
+    /**
+     * Gets the WebElement representing the "td" or "th" element
+     * 
+     * @return  WebElement representing the "td" or "th" element
+     */
     public WebElement getElement() 
     { 
         return this.element;
@@ -40,9 +44,11 @@ public class TableCell
         this.skipRows = skipRows;
     }
 
-    /// <summary>
-    /// Gets the index of this cell's row in the content region of the table.
-    /// </summary>
+    /**
+     * Gets the index of this cell's row in the content region of the table
+     * 
+     * @return Row index of this cell
+     */
     public int getRowIndex()
     {
         int precedingRowCount = this.element.findElements(By.xpath("../preceding-sibling::tr")).size();

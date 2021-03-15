@@ -9,18 +9,20 @@ import java.util.stream.IntStream;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-/// <summary>
-/// Class rerpresenting a table row html element and all its contents
-/// </summary>
+/**
+ * Class rerpresenting a table row html element and all its contents
+ */
 public class TableRow
 {
     private final Map<String, Integer> headers;
     private final int skipRows;
 
     private final WebElement element;
-    /// <summary>
-    /// IWebElement representing the "tr" element
-    /// </summary>
+    /**
+     * Gets the WebElement representing the "tr" element
+     * 
+     * @return  WebElement representing the "tr" element
+     */
     public WebElement getElement() 
     { 
         return this.element; 
@@ -38,27 +40,32 @@ public class TableRow
         this.skipRows = skipRows;
     }
 
-    /// <summary>
-    /// Gets the number of cells in the row
-    /// </summary>
+    /**
+     * Gets the number of cells in this row
+     * 
+     * @return  The number of cells in this row
+     */
     public int getCellCount()
     {
         return this.element.findElements(By.xpath("th | td")).size();
     }
 
-    /// <summary>
-    /// Gets the index of the row in the content region of the table.
-    /// </summary>
+    /**
+     * Gets the index of this row in the content region of the table
+     * 
+     * @return  Gets the row index of this row
+     */
     public int getRowIndex()
     {
         int precedingRowCount = this.element.findElements(By.xpath("preceding-sibling::tr")).size();
         return precedingRowCount - this.skipRows;
     }
 
-    /// <summary>
-    /// Gets all TableCells in the row
-    /// </summary>
-    /// <returns>Collection of TableCells representing all cells in the row</returns>
+    /**
+     * Gets all TableCells in this row
+     * 
+     * @return  Collection of TableCells representing all cells in this row
+     */
     public List<TableCell> getCells()
     {
         final List<WebElement> tableCellElements = this.element.findElements(By.xpath("th | td"));
@@ -68,11 +75,12 @@ public class TableRow
         return Collections.unmodifiableList(tableCells);
     }
 
-    /// <summary>
-    /// Gets the cell under the specified column from this row
-    /// </summary>
-    /// <param name="columnHeaderText">Identifies the column under which to find cells by the column's header text</param>
-    /// <returns>TableCell representing the cell under the specified column from this row</returns>
+    /**
+     * Gets the cell under the specified column from this row
+     * 
+     * @param columnHeaderText  Identifies the column under which to find cells by the column's header text
+     * @return                  TableCell representing the cell under the specified column from this row
+     */
     public TableCell findCell(String columnHeaderText)
     {
         if (!this.headers.containsKey(columnHeaderText))
@@ -85,11 +93,12 @@ public class TableRow
         return this.findCell(this.headers.get(columnHeaderText));
     }
 
-    /// <summary>
-    /// Gets the cell under the specified column from this row
-    /// </summary>
-    /// <param name="columnIndex">Identifies the column under which to find cells by the column's index</param>
-    /// <returns>TableCell representing the cell under the specified column from this row</returns>
+    /**
+     * Gets the cell under the specified column from this row
+     * 
+     * @param columnIndex   Identifies the column under which to find cells by the column's index
+     * @return              TableCell representing the cell under the specified column from this row
+     */
     public TableCell findCell(int columnIndex)
     {
         int xpathCellIndex = columnIndex + 1;
