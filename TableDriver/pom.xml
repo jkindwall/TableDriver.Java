@@ -75,6 +75,8 @@
           <configuration>
             <parallel>methods</parallel>
             <useUnlimitedThreads>true</useUnlimitedThreads>
+            <threadCountSuites>1</threadCountSuites>
+            <threadCountClasses>1</threadCountClasses>
             <threadCountMethods>6</threadCountMethods>
           </configuration>
         </plugin>
