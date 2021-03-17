@@ -74,9 +74,8 @@
           <version>2.22.1</version>
           <configuration>
             <parallel>all</parallel>
-            <threadCount>4</threadCount>
-            <reuseForks>false</reuseForks>
-            <forkCount>1</forkCount>
+            <useUnlimitedThreads>true</useUnlimitedThreads>
+            <threadCountMethods>6</threadCountMethods>
           </configuration>
         </plugin>
         <plugin>
