@@ -72,14 +72,14 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
-          <configuration>
+<!--           <configuration>
             <parallel>methods</parallel>
             <useUnlimitedThreads>true</useUnlimitedThreads>
             <threadCountSuites>1</threadCountSuites>
             <threadCountClasses>1</threadCountClasses>
             <threadCountMethods>6</threadCountMethods>
           </configuration>
-        </plugin>
+ -->        </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
