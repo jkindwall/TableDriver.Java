@@ -5,7 +5,7 @@
 
   <groupId>io.github.jkindwall</groupId>
   <artifactId>tabledriver</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1-SNAPSHOT</version>
 
   <name>TableDriver.Java</name>
   <url>https://github.com/jkindwall/TableDriver.Java</url>
@@ -187,7 +187,7 @@
     <connection>scm:git:git://github.com/jkindwall/TableDriver.Java.git</connection>
     <developerConnection>scm:git:git@github.com:jkindwall/jkindwall.git</developerConnection>
     <url>https://github.com/jkindwall/TableDriver.Java</url>
-    <tag>tabledriver-1.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <profiles>
