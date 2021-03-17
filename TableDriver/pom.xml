@@ -73,7 +73,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
           <configuration>
-            <parallel>all</parallel>
+            <parallel>methods</parallel>
             <useUnlimitedThreads>true</useUnlimitedThreads>
             <threadCountMethods>6</threadCountMethods>
           </configuration>
