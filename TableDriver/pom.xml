@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.jkindwall</groupId>
   <artifactId>tabledriver</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.0-SNAPSHOT</version>
 
   <name>TableDriver.Java</name>
   <url>https://github.com/jkindwall/TableDriver.Java</url>
@@ -72,7 +73,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
           <configuration>
-            <parallel>methods</parallel>
+            <parallel>all</parallel>
             <useUnlimitedThreads>true</useUnlimitedThreads>
             <threadCountMethods>6</threadCountMethods>
           </configuration>
@@ -185,7 +186,7 @@
     <connection>scm:git:git://github.com/jkindwall/TableDriver.Java.git</connection>
     <developerConnection>scm:git:git@github.com:jkindwall/jkindwall.git</developerConnection>
     <url>https://github.com/jkindwall/TableDriver.Java</url>
-    <tag>tabledriver-1.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <profiles>
