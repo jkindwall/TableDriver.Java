@@ -24,7 +24,16 @@ String price = cell.getElement().getText();
 ```
 
 # Install
-...
+Download the .jar from [Maven Central](https://search.maven.org/search?q=tabledriver) and add it to your project, or use your preferred build tool to add TableDriver as a dependency to your test project.
+
+Maven
+``` xml
+<dependency>
+  <groupId>io.github.jkindwall</groupId>
+  <artifactId>tabledriver</artifactId>
+  <version>1.1.3</version>
+</dependency>
+```
 
 # Usage
 ## Creating the Table object
